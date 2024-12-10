@@ -1,0 +1,59 @@
+Name:  Annie Nguyen (Ngoc Mai Anh Nguyen)
+Project name:  To-do list Assistat bot
+Project description:
+-	Bot features: add tasks, view tasks, mark task “Done” when it completed, delete task, find task and exit.
+-	Have a mental health supporter.
+Desired features of finished product:
+-	All features can be used by typing number (Eg: user type 1 then program start let user add new task).
+-	After using one feature, main menu will appear (Except when user choose “Exit”).
+-	When user use program, they can:
+•	Add Tasks:
+Program will ask user:
+	“Enter task tittle:”  (Eg: “Do homework”)
+	“Enter due date:” (MM/DD/YYYY):”
+	“Enter level on importance of the task (High, Medium, Low):”
+	Program print “Task added successfully!”
+	When user type wrong. Print response if user type wrong and come back to the main menu 
+(Eg: Enter due date (MM/DD/YYYY): 2
+-> print “Invalid date format. Please use MM/DD/YYYY)”
+Other false:
+->  ”Invalid month. Please enter a month between 1 and 12.”
+->  ”Invalid day. Please enter a day between _ and _*.” 
+*The _  will be differences depending on month 31 days, month 30 days, leap year: February has 29 days and normal year February has 28 days.
+•	View Tasks:
+	Show all task completed or not complete.
+	[✓] completed	[  ] haven’t completed
+	All task which are being shown will in order  which number ordered.
+	Each task have to show “Task tittle”, “Due date”, “Level of importance”.
+	If no task can be found, print “No tasks found.”
+	Example: 
+1. [✓ ] Do CS homework (Due: 2020-02-02, Important rate: High)
+2.  [    ] Do math homework (Due: 2391-03-02, Important rate: Low)
+
+•	Mark Task:
+	 Print all task which their number.
+	Can ask user “Enter task number to mark as completed”
+	When user type a number which have task, print “Task marked as completed”.
+	When user type a number which don’t have task print “Invalid task number" or a weird symbol (not number) or just leave space, then print “Invalid data, please enter again!”.
+	If no task can be found, print “No tasks found.”
+•	Delete Task:
+	Same with the mark task function.
+	Ask user which task do they want to delete by type a task mumber.
+	When done, print “Task deleted successfully."
+	When user type a number which don’t have task print “Invalid task number" or a weird symbol (not number) or just leave space, then print “Invalid data, please enter again!”.
+	If no task can be found, print “No tasks found.”
+•	Find Task:
+	When user choose “Find Tasks” fuction, program will print out 3 options and ask user for their choice. Print “Enter the number of way that is suitable with your choice:”.
+	Find by task's "Title": print “Enter the task title:” and then looking for all task which have same name with user’s input even same or different form (lower, upper or having sign). If there are no task suitable with user’s input, print “Task not found with that tittle.”
+	
+	Find by task's "Due date": print “Enter the task due date (MM/DD/YYYY):” and then print out all task have same due date with user’s input. If user type wrong form, print “Please type a date!” and if there are no task suitable with user’s input, print “Task not found with that due date.”
+	Find by task's "Important rate": print “Enter the task importance rate (High, Medium, Low):”. User can type it in any form then program will print all tasks which are suitable which user’s input or print “Task not found with that importance rate.”
+	If there are any task suitable with user’s input, print out task’s tittle, due date, important rate.
+	If user type a wrong number or not a number, print “Invalid choice. Please enter a number between 1 and 3.”
+•	Mental heal supporter:
+	Ask user for their feeling: “How are you today?”. Remind user for not using “not” and “ Too”  and then comapare it with the list that already set up.
+	There are 5 types of feelings: anger, sad, confused, special bad feeling and good feelings.
+	If program cannot determine user feeling, it will ask user to choose from 1 to 10 to mark their feeling and answer up to user input.
+	If when program moved to ask for a number, user didn’t type from 1 to 10 then ask them to type again.
+•	Exit:
+	Print “Exiting program. Goodbye!”
